@@ -1,0 +1,151 @@
+.modal {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  top: -13%;
+
+  background: rgba(61, 61, 61, 0.48);
+}
+
+.cardRegistro {
+  padding: 62px;
+  position: absolute;
+  width: 600px;
+  height: 779px;
+  left: 415px;
+  top: 5%;
+
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.cardRegistro h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.close-registro {
+  cursor: pointer;
+
+  width: 26.58px;
+  height: 26.38px;
+
+  position: absolute;
+  right: 8%;
+  top: 75px;
+}
+
+.registerType {
+  position: relative;
+  width: 489px;
+  height: 56px;
+
+  margin-top: 52px;
+  margin-bottom: 42px;
+}
+
+.inputRegister,
+.outputRegister,
+.inputRegister-selected,
+.outputRegister-selected {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  width: 244.5px;
+  height: 56px;
+
+  border-radius: 30px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.inputRegister,
+.inputRegister-selected {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.inputRegister {
+  background: #b9b9b9;
+}
+
+.inputRegister-selected {
+  background: linear-gradient(91.26deg, #05ede3 0%, #3a9ff1 97.77%);
+}
+
+.outputRegister,
+.outputRegister-selected {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.outputRegister {
+  background: #b9b9b9;
+}
+
+.outputRegister-selected {
+  background: linear-gradient(91.66deg, #fa8c10 0%, #ff576b 90.32%);
+}
+
+.input-form label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #484848;
+}
+
+.input-form input {
+  all: unset;
+  box-sizing: border-box;
+  cursor: text;
+
+  width: 485px;
+  height: 63.49px;
+
+  background: #ffffff;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  padding: 5px 10px;
+}
+
+form {
+  gap: 26px;
+}
+
+.btn-confirmar {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  width: 236px;
+  height: 38px;
+  left: 602px;
+  top: 864px;
+
+  background: #645ffb;
+  border-radius: 5px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  align-self: center;
+
+  color: #ffffff;
+}

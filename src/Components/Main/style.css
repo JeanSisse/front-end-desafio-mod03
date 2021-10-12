@@ -1,0 +1,29 @@
+.main {
+  min-width: 100vw;
+  height: 927px;
+
+  padding: 63px 100px 0 100px;
+
+  position: absolute;
+  left: 0px;
+  top: 116px;
+
+  background: #ffffff;
+  border-radius: 60px 60px 0px 0px;
+}
+
+.resumo-registros {
+  padding: 0 33px 0 26px;
+
+  margin-top: 23px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #2f2f2f;
+}
+
+.resumo-botao {
+  gap: 16px;
+}

@@ -1,0 +1,68 @@
+.card-resumo {
+  padding-top: 26px;
+  width: 236px;
+  height: 196px;
+
+  margin-left: 45px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.registro-resumo {
+  padding-top: 34px;
+}
+
+.resumo-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #2f2f2f;
+}
+
+h4 {
+  margin-bottom: 23px;
+  margin-left: 26px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #2f2f2f;
+}
+
+.resumo-registros {
+  padding: 0 33px 0 26px;
+
+  margin-top: 23px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #2f2f2f;
+}
+
+hr {
+  margin: 17px 23px;
+  width: 189px;
+  height: 0px;
+
+  border: 1px solid #eaeaea;
+}
+
+.entradas {
+  color: #7b61ff;
+}
+
+.saidas {
+  color: #fa8c10;
+}
+
+.saldos {
+  color: #3a9ff1;
+}

@@ -1,0 +1,171 @@
+.fields-filtro {
+  padding: 26px 26px 26px 38px;
+  width: 864px;
+  height: 213px;
+
+  gap: 16px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  margin-bottom: 53px;
+  position: relative;
+}
+
+.filterValue {
+  width: 65px;
+  height: 114px;
+
+  position: absolute;
+  right: 35%;
+
+  gap: 16px;
+}
+
+h5,
+.inputs {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+h5 {
+  color: #b9b9b9;
+}
+
+.inputs-div {
+  width: 65px;
+  height: 35px;
+
+  color: #484848;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #7b61ff;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  width: 65px;
+  height: 22px;
+}
+
+.aplicar-filtros,
+.limpar-filtros {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  width: 98px;
+  height: 30px;
+
+  position: absolute;
+  bottom: 10%;
+
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.limpar-filtros {
+  background: #fafafa;
+
+  color: #000000;
+
+  right: 16%;
+}
+
+.aplicar-filtros {
+  background: linear-gradient(264.83deg, #3a9ff1 -3.28%, #05ede3 100%);
+
+  color: #ffffff;
+
+  right: 3%;
+}
+
+.dias-de-semana,
+.category {
+  position: absolute;
+  width: 172px;
+  height: 141px;
+}
+
+.dias-de-semana h5,
+.category h5 {
+  margin-bottom: 18px;
+}
+
+.dias,
+.categories {
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.dias,
+.categories {
+  width: 172px;
+  height: 107px;
+}
+
+.category {
+  left: 31%;
+}
+
+.fields {
+  width: 80px;
+  height: 20px;
+
+  padding: 4px 10px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+
+  color: #000000;
+
+  cursor: pointer;
+}
+
+.fields-selected {
+  background: #7b61ff;
+}
+
+.linha-vertical-direita,
+.linha-vertical-esquerda {
+  width: 138px;
+  height: 0px;
+
+  position: absolute;
+  top: 105px;
+
+  border: 1px solid #eaeaea;
+  transform: rotate(90deg);
+}
+
+.linha-vertical-direita {
+  left: 375px;
+}
+
+.linha-vertical-esquerda {
+  left: 145px;
+}

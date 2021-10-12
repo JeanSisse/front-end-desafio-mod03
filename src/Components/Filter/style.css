@@ -1,0 +1,25 @@
+.filter {
+  align-items: center;
+
+  width: 80px;
+  height: 30px;
+
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.span-filter {
+  margin-left: 4px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
