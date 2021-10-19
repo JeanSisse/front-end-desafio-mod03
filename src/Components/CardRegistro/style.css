@@ -3,9 +3,11 @@
   right: 0;
   bottom: 0;
   left: 0px;
-  top: -13%;
+  top: -16%;
 
   background: rgba(61, 61, 61, 0.48);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .cardRegistro {

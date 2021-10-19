@@ -129,6 +129,8 @@ function CardRegistro(
       setDate('');
       setDescricao('');
       setCategoria('');
+
+      handleDisplayCardRegister();
     } catch (error) {
       console.log(error.message);
     }
@@ -173,6 +175,8 @@ function CardRegistro(
       setDate('');
       setDescricao('');
       setCategoria('');
+
+      handleDisplayCardRegister();
     } catch (error) {
       console.log(error.message);
     }
@@ -224,6 +228,7 @@ function CardRegistro(
             <input 
               id="valor"
               type="number"
+              placeholder="R$ 2500"
               onChange={(e) => setValor(e.target.value)}
               value={valor}
             />
