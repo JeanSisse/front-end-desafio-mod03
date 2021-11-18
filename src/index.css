@@ -8,11 +8,6 @@ body {
   min-height: 100vh;
 }
 
-.card-controle {
-  position: relative;
-  min-width: 100vw;
-}
-
 .flex-row {
   display: flex;
 }
