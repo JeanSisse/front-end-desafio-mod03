@@ -1,7 +1,9 @@
 import './style.css';
+import useGlobalContext from '../../hooks/useGloblaContext';
 
-function Filter({ handleDisplayFiltro }) {
-
+function Filter() {
+  const { handleDisplayFiltro } = useGlobalContext();
+  
   return (
     <div
       className="filter flex-row justify-center"

@@ -26,8 +26,7 @@ function Main() {
     categories,
     setCategories,
     loadTransactions,
-    loadCategory,
-    handleDisplayFiltro
+    loadCategory
   } = useGlobalContext();
 
   useEffect(() => {
@@ -41,9 +40,7 @@ function Main() {
 
   return (
     <div className="main">
-      <Filter
-        handleDisplayFiltro={handleDisplayFiltro}
-      />
+      <Filter />
       <div className="registro-resumo flex-row  justify-between">
         <div className="filtro-table">
           {
