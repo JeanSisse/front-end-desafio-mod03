@@ -9,9 +9,10 @@ import TabelaDeRegistros from '../TabelaDeRegistro';
 import Filter from '../Filter';
 import CardRegistro from '../CardRegistro';
 
+import useGlobalContext from '../../hooks/useGloblaContext';
+
 function Main() {
 
-  const [displayFiltro, setDisplayFiltro] = useState(false);
   const [displayCardRegister, setDisplayCardRegister] = useState(false);
   const [registers, setRegisters] = useState([]);
   const [updateResumo, setUpdateResumo] = useState(false);
@@ -19,6 +20,11 @@ function Main() {
   const [updateCatReg, setUpdateCatReg] = useState(false);
 
   const [categories, setCategories] = useState([{}]);
+
+  const {
+    displayFiltro,
+    setDisplayFiltro
+  } = useGlobalContext();
 
   useEffect(() => {
     loadTransactions();

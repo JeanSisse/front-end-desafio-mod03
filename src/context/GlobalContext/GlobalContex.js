@@ -6,7 +6,7 @@ const GlobalContext = createContext();
 export function GlobalContextProvider(props) {
   const globalContextProvider = useGlobalContextProvider();
 
-  return(
+  return (
     <GlobalContext.Provider value={globalContextProvider}>
       {props.children}
     </GlobalContext.Provider>
