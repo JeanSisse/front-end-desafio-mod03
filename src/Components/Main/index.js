@@ -1,75 +1,43 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import './style.css';
-import { useState, useEffect } from 'react';
-
-import CardResumo from '../CardResumo';
-import BotaoRegistrar from '../BotaoRegistrar';
-import FieldsFilter from '../FieldsFilter';
-import TabelaDeRegistros from '../TabelaDeRegistro';
-import Filter from '../Filter';
-import CardRegistro from '../CardRegistro';
-
+import { useEffect } from 'react';
 import useGlobalContext from '../../hooks/useGloblaContext';
+import BotaoRegistrar from '../BotaoRegistrar';
+import CardRegistro from '../CardRegistro';
+import CardResumo from '../CardResumo';
+import FieldsFilter from '../FieldsFilter';
+import Filter from '../Filter';
+import TabelaDeRegistros from '../TabelaDeRegistro';
+import './style.css';
 
 function Main() {
 
-  const [displayCardRegister, setDisplayCardRegister] = useState(false);
-  const [registers, setRegisters] = useState([]);
-  const [updateResumo, setUpdateResumo] = useState(false);
-  const [transactionEditing, setTransactionEditing] = useState(false);
-  const [updateCatReg, setUpdateCatReg] = useState(false);
-
-  const [categories, setCategories] = useState([{}]);
-
   const {
     displayFiltro,
-    setDisplayFiltro
+    displayCardRegister,
+    setDisplayCardRegister,
+    registers,
+    setRegisters,
+    updateResumo,
+    setUpdateResumo,
+    transactionEditing,
+    setTransactionEditing,
+    updateCatReg,
+    setUpdateCatReg,
+    categories,
+    setCategories,
+    loadTransactions,
+    loadCategory,
+    handleDisplayFiltro
   } = useGlobalContext();
 
   useEffect(() => {
     loadTransactions();
   }, []);
 
-  const loadTransactions = async () => {
-    try {
-      const response = await fetch('http://localhost:3334/transactions', {
-        method: 'GET'
-      });
-
-      const data = await response.json();
-      
-      setRegisters(data);
-      setUpdateResumo(data);
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
-
   useEffect(() => {
     if (updateCatReg)
       loadCategory();
   }, [registers, updateCatReg])
-
-  function loadCategory() {
-    const category = [];
-    const objOfCategoris = [];
-    
-    registers.filter((register) => {
-      if (category.indexOf(register.category) === -1){
-        category.push(register.category);
-        objOfCategoris.push({field: register.category, selected: false})
-      }
-      return objOfCategoris;
-    });
-    
-    setCategories(objOfCategoris);
-  }
-
-  const handleDisplayFiltro = () => {
-    loadCategory();
-    const copiDisplayFiltro = !displayFiltro;
-    setDisplayFiltro(copiDisplayFiltro);
-  }
 
   return (
     <div className="main">
