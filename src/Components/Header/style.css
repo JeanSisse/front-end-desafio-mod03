@@ -1,7 +1,7 @@
 .header {
   background: linear-gradient(to right, #05ede3, #6460fb);
 
-  min-width: 100vw;
+  max-width: 100vw;
   padding-top: 41px;
   padding-bottom: 138px;
   padding-left: 100px;

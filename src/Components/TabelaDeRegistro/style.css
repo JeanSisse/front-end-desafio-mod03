@@ -1,12 +1,12 @@
 table {
-  width: 864px;
+  max-width: 63.3vw;
 }
 
 thead {
-  width: 864px;
+  max-width: 63.3vw;
   height: 58px;
 
-  background: #fafafa;
+  background: hsl(0, 0%, 98%);
   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
@@ -29,7 +29,7 @@ td {
   justify-content: center;
 
   text-align: center;
-  width: 144px;
+  width: 10.54vw;
 }
 
 th {
