@@ -22,7 +22,7 @@ function TabelaDeRegistros(
 
   const handleDelete = async (registerId) => {
     try {
-      await fetch(`http://localhost:3334/transactions/${registerId}`, {
+      await fetch(`https://dindin-api-cubos.herokuapp.com/transactions/${registerId}`, {
         method: 'DELETE'
       });
 

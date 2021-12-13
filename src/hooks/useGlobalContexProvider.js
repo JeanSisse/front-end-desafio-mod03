@@ -13,7 +13,7 @@ function useGlobalContextProvider() {
 
   const loadTransactions = async () => {
     try {
-      const response = await fetch('http://localhost:3334/transactions', {
+      const response = await fetch('https://dindin-api-cubos.herokuapp.com/transactions', {
         method: 'GET'
       });
 
