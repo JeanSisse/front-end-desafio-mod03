@@ -239,6 +239,7 @@ function CardRegistro(
             <input 
               id="categoria" 
               type="text"
+              placeholder='categoria'
               onChange={(e) => setCategoria(e.target.value)}
               value={categoria}
             />
@@ -249,6 +250,7 @@ function CardRegistro(
             <InputMask
               id="data"
               mask="99/99/9999"
+              placeholder='99/99/9999'
               onChange={(e) => setDate(e.target.value)}
               value={date}
             />
